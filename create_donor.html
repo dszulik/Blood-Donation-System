@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action='insert_donor.php' method='post'>
+    <h2>Dodaj dawcę</h2>
+        <input type='text' name='imie' placeholder='IMIĘ'>
+        <input type='text' name='nazwisko' placeholder='NAZWISKO'>
+        <select type='varchar' name="plec" id="plec">
+            <option type='varchar' value="K">KOBIETA</option>
+            <option type='varchar' value="M">MĘŻCZYZNA</option>
+        </select>
+        <input type='text' name='pesel' placeholder='PESEL'>
+        <input type='date' name='data_urodzenia' placeholder='DATA URODZENIA'>
+        <select type='text' name="grupa_krwi" id="grupa_krwi">
+            <option type='text' value="0"></option>
+            <option type='text' value="ARh+">ARh+</option>
+            <option type='text' value="ARh-">ARh-</option>
+            <option type='text' value="BRh+">BRh+</option>
+            <option type='text' value="BRh-">BRh-</option>
+            <option type='text' value="ABRh+">ABRh+</option>
+            <option type='text' value="ABRh-">ABRh-</option>
+            <option type='text' value="0Rh+">0Rh+</option>
+            <option type='text' value="0Rh-">0Rh-</option>
+        </select>
+        <input type='text' name='miasto' placeholder='MIASTO'>
+        <input type='text' name='adres' placeholder='ADRES'>
+        <input type='text' name='telefon' placeholder='TELEFON'>
+        <button id="action_button" type=submit name=submit>DODAJ</button>
+    </form>
+</body>
+</html>
